@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+fetch("https://v3.football.api-sports.io/players?league=61&search=payet", {
+  "method": "GET",
+  "headers": {
+    "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2",
+  }
+})
+  .then(response => {
+    console.log(response);
+  })
+  .catch(err => {
+    console.log(err);
+  });
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
     </div>
   );
 }
