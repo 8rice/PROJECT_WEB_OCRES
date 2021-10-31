@@ -1,0 +1,13 @@
+.Nav {
+
+position: absolute;
+width: 66px;
+height: 3685px;
+left: 0px;
+top: 0px;
+}
+
+.Nav {
+background: #222232;
+box-shadow: inset -1px 0px 0px #C4C4C4;
+}

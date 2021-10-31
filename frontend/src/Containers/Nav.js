@@ -1,6 +1,38 @@
 import React from 'react';
+import '../Styles/Nav.css';
 
-export default class Nav extends React.Component {
+
+
+
+function Nav() {
+
+    return (
+        <div className="nav">
+            <h1> AAAAAAA </h1>
+            { /* interaction icon  */}
+            { /* Data icon   */}
+            { /* Account icon  */}
+            { /* Parameter icon */}
+
+        </div>
+
+
+    );
+
+}
+
+
+
+export default Nav;
+
+
+
+
+
+
+
+
+/*export default class Nav extends React.Component {
 
     state = {
         data: []
@@ -33,3 +65,4 @@ export default class Nav extends React.Component {
         );
     }
 }
+*/
