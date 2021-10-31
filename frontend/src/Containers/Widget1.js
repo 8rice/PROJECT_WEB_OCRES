@@ -34,4 +34,3 @@ export default class Widget1 extends React.Component {
         );
     }
 }
-* /
