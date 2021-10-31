@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Styles/index.css';
+import './Styles/Nav.css'
+import './Styles/Sidebar.css'
+import './Styles/Topbar.css'
+
+
 import App from './App.js';
 import * as serviceWorker from './serviceWorker';
 
