@@ -1,4 +1,3 @@
-<<<<<<< HEAD:frontend/src/Containers/Widget1.js
 // A RENOMMER PAR LE NOM DU WIDGET
 
 import React from 'react';
