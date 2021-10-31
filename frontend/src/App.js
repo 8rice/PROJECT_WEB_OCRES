@@ -1,6 +1,7 @@
 import React from 'react';
 import TopBar from './Containers/TopBar';
 import SideBar from './Containers/SideBar';
+import HomeVisual from './Containers/HomeVisual';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
       <SideBar></SideBar>
       <TopBar></TopBar>
+      <HomeVisual></HomeVisual>
     </div>
   );
 
