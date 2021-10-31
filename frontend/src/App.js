@@ -1,15 +1,18 @@
 import React from 'react';
-import './App.css';
-import Nav from './Containers/Nav.js';
+import TopBar from './Containers/TopBar';
+import SideBar from './Containers/SideBar';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <Nav></Nav>
+      <SideBar></SideBar>
+      <TopBar></TopBar>
     </div>
   );
+
 }
 
 export default App;

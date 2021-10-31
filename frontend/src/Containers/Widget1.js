@@ -1,7 +1,8 @@
+// A RENOMMER PAR LE NOM DU WIDGET
+
 import React from 'react';
 
-export default class Nav extends React.Component {
-
+export default class Widget1 extends React.Component {
     state = {
         data: []
     }
