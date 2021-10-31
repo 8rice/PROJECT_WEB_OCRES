@@ -14,7 +14,7 @@ export default function TopBar() {
             </div>
             <div className="UserInfos">
                 <p>{user.name} {user.surname}</p>
-                <img className="UserPicture" src={userPicture} alt="user picture" />
+                <img className="UserPicture" src={userPicture} alt="user" />
             </div>
         </div>
     );
