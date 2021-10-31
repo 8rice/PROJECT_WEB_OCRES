@@ -1,11 +1,20 @@
 import React from 'react';
 import '../Assets/logo.png'
+// Plan de la topbar
+{/* Logo du site */}
+            {/* Affichage prénom du user*/}
+            {/* Photo */}
+            {/* message */}
+            {/* notifications */}
+            {/* coeur */}
 
 export default function TopBar() {
 
-
+ 
 
     return (
+        
+
         <div className="TopBar">
             <div className="Logo">
                 <img alt="logo" src="{logo}" />

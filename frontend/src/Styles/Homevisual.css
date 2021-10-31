@@ -1,0 +1,22 @@
+.Homevisual{
+   /*position: ; Position à trouver pas absolute */ 
+    width: 1299px;
+    height: 581px;
+    left: 101px;
+    top: 192px;
+    
+}
+.Title {
+    /*position: ; Position à trouver pas absolute */  
+ width: 801px;
+height: 91px;
+left: 337px;
+top: 375px;
+font-family: Inter;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
+mix-blend-mode: normal;
+}
