@@ -7,29 +7,29 @@
     text-align: center;
   }
   
-  .SideBar .selected{
-    background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .fas{
-    display: flex;
-    font-size: 33px;
-    text-align: center;
-    justify-content: center;
-    padding-top: 30px;
-    cursor: pointer;
-  }
-  
-  .fas:hover{
-    color: #a1a1a1;
-  }
-  
-  .fa-bars{
-    margin-top: 14px;
-  }
-  
-  .fa-home{
-    margin-top: 20px;
-  }
+.SideBar .selected{
+  background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fas{
+  display: flex;
+  font-size: 33px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.fas:hover{
+  color: #a1a1a1;
+}
+
+.fa-bars{
+  margin-top: 14px;
+}
+
+.fa-home{
+  margin-top: 20px;
+}
