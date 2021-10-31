@@ -1,5 +1,34 @@
 // A RENOMMER PAR LE NOM DU WIDGET
 
+
+import React from 'react'
+
+function Widget1() {
+    return (
+        <div>
+            <table className='Topscorer'>
+                <tr><th className='Title'
+                    colspan="2 "> <span>Best</span> SCORER</th></tr>
+                <tr><th className='ColPlayer' scope="col"> <span>Player</span></th></tr>
+                <tr><th className='Colgoals' scope="col"> <span> Goals</span></th></tr>
+
+            </table>
+        </div>
+    )
+}
+
+export default Widget1
+
+
+
+
+
+
+
+
+
+
+/*
 import React from 'react';
 
 export default class Widget1 extends React.Component {
@@ -34,3 +63,4 @@ export default class Widget1 extends React.Component {
         );
     }
 }
+*/
