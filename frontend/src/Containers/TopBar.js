@@ -1,31 +1,34 @@
 import React from 'react';
-import '../Assets/logo.png'
-// Plan de la topbar
-{/* Logo du site */}
-            {/* Affichage prénom du user*/}
-            {/* Photo */}
-            {/* message */}
-            {/* notifications */}
-            {/* coeur */}
+import logo from '../Assets/logo.png'
+import userPicture from '../Assets/userpicture.jpeg'
+
+
 
 export default function TopBar() {
-
- 
-
+    const user = {
+        name: "Jacques",
+        surname: "Rossard"
+    }
     return (
-        
+
 
         <div className="TopBar">
             <div className="Logo">
-                <img alt="logo" src="{logo}" />
+                <img src={logo} alt="logo" />
             </div>
             <div className="UserInfos">
                 <p>{user.name} {user.surname}</p>
-                <img alt="userPicture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/1200px-Breezeicons-actions-22-im-user.svg.png" />
+                <img className="UserPicture" src={userPicture} alt="user" />
             </div>
         </div>
     );
-
-
-
 }
+/*
+// Plan de la topbar
+{/* Logo du site */
+/* Affichage prénom du user*/
+/* Photo */
+/* message */
+/* notifications */
+/* coeur */
+
