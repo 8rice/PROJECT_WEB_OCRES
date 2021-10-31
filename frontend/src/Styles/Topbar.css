@@ -22,4 +22,13 @@
     color:#c4c4c4;
     padding: 10px;
   }
+  .Logo{
+    position: absolute;
+    width: 248px;
+    height: 72px;
+    left: 193px;
+    top: 19px;
+    
+    background: url(../Assets/logo.png); 
+  }
   
