@@ -25,8 +25,10 @@ function App() {
   return (
     <div className="App">
       <SideBar></SideBar>
-      <TopBar></TopBar>
-      <HomeVisual></HomeVisual>
+      <div className="CenterContent">
+        <TopBar></TopBar>
+        <HomeVisual></HomeVisual>
+      </div>
     </div>
   );
 

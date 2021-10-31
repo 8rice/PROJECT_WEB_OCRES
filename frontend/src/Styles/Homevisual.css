@@ -1,58 +1,37 @@
-.Homevisual{
-/*position: ; Position à trouver pas absolute */
-width: 1373px;
-height: 654px;
-left: 66px;
-top: 119px;
-background: #181829;
-}
-.Homevisual-content{
- /*position: ; Position à trouver pas absolute */
- width: 1299px;
-height: 581px;
-left: 101px;
-top: 192px;
-
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-.Title {
-/*position: ; Position à trouver pas absolute */  
- width: 801px;
-height: 91px;
-left: 337px;
-top: 375px;
-font-family: Inter;
-font-style: normal;
-font-weight: 800;
-font-size: 64px;
-line-height: 77px;
-text-align: center;
-mix-blend-mode: normal;
-background: -webkit-linear-gradient(#F4A58A 100%, #ED6B4E 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+.HomeVisual{
+    background-image: url("../Assets/backgroundMessiRonaldo.PNG");
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.Ronaldo {
-/*position: ; Position à trouver pas absolute */
-width: 461px;
-height: 576px;
-left: 562px;
-top: 197px;
 
-background: url(../Assets/ronaldo.png);
-filter: blur(10px);
-transform: matrix(-1, 0, 0, 1, 0, 0);
+/* All football you need */
+.HomeVisual h1{
+    background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 68px;
 }
-.Messi{
-/*position: ; Position à trouver pas absolute */
-width: 750px;
-height: 581px;
-left: 1400px;
-top: 192px;
 
-background: url(../Assets/messi.png);
-filter: blur(10px);
-transform: matrix(-1, 0, 0, 1, 0, 0);
+.HomeVisual span{
+    border-bottom: 7px solid #ED6B4E;
 }
+
+/*Icons*/
+.Icons{
+    color: #ED6B4E;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.Icons i{
+    padding: 20px;
+    font-size: 68px;
+}
+

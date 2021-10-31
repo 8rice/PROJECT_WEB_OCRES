@@ -13,7 +13,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.fas{
+.SideBar .fas{
   display: flex;
   font-size: 33px;
   text-align: center;
@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.fas:hover{
+.SideBar .fas:hover{
   color: #a1a1a1;
 }
 
