@@ -5,6 +5,7 @@ import './Styles/Nav.css'
 import './Styles/Sidebar.css'
 import './Styles/Topbar.css'
 import './Styles/Homevisual.css'
+import './Styles/TopScorerWidget.css'
 
 
 import App from './App.js';

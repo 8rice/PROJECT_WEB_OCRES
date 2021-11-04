@@ -2,6 +2,7 @@ import React from 'react';
 import TopBar from './Containers/TopBar';
 import SideBar from './Containers/SideBar';
 import HomeVisual from './Containers/HomeVisual';
+import TopScorerWidget from './Containers/TopScorerWidget';
 
 
 
@@ -28,6 +29,9 @@ function App() {
       <div className="CenterContent">
         <TopBar></TopBar>
         <HomeVisual></HomeVisual>
+        <div className="Widgets">
+          <TopScorerWidget></TopScorerWidget>
+        </div>
       </div>
     </div>
   );

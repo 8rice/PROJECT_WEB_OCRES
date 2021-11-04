@@ -25,5 +25,11 @@ code {
   width: 100%;
 }
 
+.Widgets{
+  background-color: #222232;
+  height: 800px;
+  display: flex;
+}
+
 
 

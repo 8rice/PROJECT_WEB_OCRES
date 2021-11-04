@@ -1,31 +1,41 @@
 // A RENOMMER PAR LE NOM DU WIDGET
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
-function Widget1() {
+function TopScorerWidget() {
+    const [data, setData] = useState(null);
+
+    function componentDidMount() {
+        fetch("https://v3.football.api-sports.io/players/topscorers?league=61&season=2020", {
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2",
+            }
+        }).then((response) => {
+            return response.json()
+        })
+            .then((result) => {
+                console.log(result.response[0].player.name)
+                setData(result.response[0].player.name)
+            })
+    }
+    componentDidMount();
     return (
-        <div>
-            <table className='Topscorer'>
+        <div className='TopScorer'>
+            <table>
                 <tr><th className='Title'
                     colspan="2 "> <span>Best</span> SCORER</th></tr>
                 <tr><th className='ColPlayer' scope="col"> <span>Player</span></th></tr>
                 <tr><th className='Colgoals' scope="col"> <span> Goals</span></th></tr>
 
             </table>
+            {data}
         </div>
     )
 }
 
-export default Widget1
-
-
-
-
-
-
-
-
+export default TopScorerWidget
 
 
 /*
@@ -37,7 +47,7 @@ export default class Widget1 extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://v3.football.api-sports.io/players?league=61&search=payet", {
+        fetch("https://v3.football.api-sports.io/players/topscorers", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2",
@@ -50,6 +60,7 @@ export default class Widget1 extends React.Component {
                     { data: result.response[0].player.name }
                 )
                 console.log(result.response[0].player.name)
+                console.log(result.response[0].statistics.goals.total)
             })
     }
 
