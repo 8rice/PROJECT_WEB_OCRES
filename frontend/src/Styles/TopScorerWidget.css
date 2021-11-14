@@ -1,4 +1,55 @@
 .TopScorer{
     background-color: #2B2B3D;
-    height: auto;
+   
 }
+.Title span{
+    background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 29px;
+    border-bottom: 7px solid #ED6B4E;
+    
+}  
+
+
+ 
+  
+.Title h2 {
+    font-family: Source Sans Pro;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 29px;
+/* or 81% */
+
+
+color: #C4C4C4;
+
+ 
+}
+
+.TopScorer h3 {
+    font-family: Source Sans Pro;
+font-style: italic;
+font-weight: normal;
+font-size: 20px;
+line-height: 29px;
+/* or 146% */
+
+color: rgba(196, 196, 196, 0.5);
+}   
+.Title{
+   width: 22%; 
+}
+
+.ColPlayer {
+    width: 5%;
+}
+
+.Colgoals {
+    width: 5%;
+}  
