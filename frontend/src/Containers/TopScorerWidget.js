@@ -24,11 +24,12 @@ function TopScorerWidget() {
     return (
         <div className='TopScorer'>
             <table>
-                <tr><th className='Title'
-                    colspan="2 "> <span>Best</span> SCORER</th></tr>
-                <tr><th className='ColPlayer' scope="col"> <span>Player</span></th></tr>
-                <tr><th className='Colgoals' scope="col"> <span> Goals</span></th></tr>
+                <thead>
+                    <tr><th className='Title' colspan="3"> <span>Best</span> SCORER</th></tr>
 
+                    <tr><th className='ColPlayer' scope="col"> <span>Player</span></th>
+                        <th className='Colgoals' scope="col"> <span> Goals</span></th></tr>
+                </thead>
             </table>
             {data}
         </div>
