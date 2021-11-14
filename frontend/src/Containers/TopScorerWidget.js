@@ -29,20 +29,20 @@ function TopScorerWidget() {
     return (
         <div className='TopScorer'>
             <table>
-                <tr><th className='Title'
-                    colSpan="2 "> <span>Best</span> SCORER</th></tr>
-                <tr><th className='ColPlayer' scope="col"> <span>Player</span></th></tr>
-                <tr><th className='Colgoals' scope="col"> <span> Goals</span></th></tr>
-
+                <thead>
+                    <tr><th className='Title' colspan="4">  <h2> <span>Best</span> SCORERS </h2></th></tr>
+                    <th className='ColPlayer' scope="col"> <h3><span>Player</span></h3></th>
+                    <th className='Colgoals' scope="col"> <h3><span>Goals</span></h3></th>
+                </thead>
             </table>
-            {data}
+
         </div>
     )
 }
 
 export default TopScorerWidget
 
-
+// {data}
 /*
 import React from 'react';
 
