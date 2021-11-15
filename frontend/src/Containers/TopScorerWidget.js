@@ -10,7 +10,7 @@ function TopScorerWidget() {
         fetch("https://v3.football.api-sports.io/players/topscorers?league=61&season=2020", {
             "method": "GET",
             "headers": {
-                "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2",
+                "x-rapidapi-key": "c742f7706995d0d8efeb6d3002dc638b",
             }
         }).then((response) => {
             return response.json()
@@ -22,7 +22,6 @@ function TopScorerWidget() {
                     tab.push(result.response[x].player.name)
                 }
                 setData(tab)
-
             })
     });
 
@@ -35,7 +34,7 @@ function TopScorerWidget() {
                     <th className='Colgoals' scope="col"> <h3><span>Goals</span></h3></th>
                 </thead>
             </table>
-
+            {data}
         </div>
     )
 }
