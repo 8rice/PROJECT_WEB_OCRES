@@ -28,10 +28,22 @@ function TopScorerWidget() {
         <div className='TopScorer'>
             <table>
                 <thead>
-                    <tr><th className='Title' colspan="4">  <h2> <span>Best</span> SCORERS </h2></th></tr>
-                    <th className='ColPlayer' scope="col"> <h3><span>Player</span></h3></th>
-                    <th className='Colgoals' scope="col"> <h3><span>Goals</span></h3></th>
+                    <tr><th className='Title' colspan="3">  <h2> <span>Best</span> SCORERS </h2></th></tr>
+                    <tr><th className='ColPlayer'> <h3><span>Player</span></h3></th>
+                    <th className='Colgoals'><h3><span>Goals</span></h3></th> </tr>
                 </thead>
+
+                <tbody>
+                    <tr> <td colspan="3"><h4>Lionel Messi</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Robert Lewandowski</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Neymar </h4> </td>  <td colspan="3"><h4>7</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Cristiano Ronaldo</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Kylian Mbappe</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Erling Haaland</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Jorginho</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Bruno Fernandes</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                </tbody>
+
             </table>
 
         </div>
