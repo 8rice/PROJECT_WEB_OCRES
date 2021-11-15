@@ -1,7 +1,12 @@
 .TopScorer{
     background-color: #2B2B3D;
+    width: 30%;
    
 }
+
+table {
+    width: 100%;
+} 
 .Title span{
     background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
     -webkit-background-clip: text;
@@ -11,10 +16,23 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 29px;
-    border-bottom: 7px solid #ED6B4E;
+    text-decoration-line: underline;
+    text-decoration-color:#ED6B4E;
     
 }  
+td {
+    
+} 
 
+.TopScorer h4 {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /* or 122% */
+    color: #C4C4C4;
+} 
 
  
   
@@ -43,13 +61,16 @@ line-height: 29px;
 color: rgba(196, 196, 196, 0.5);
 }   
 .Title{
-   width: 22%; 
+ 
+   
 }
 
 .ColPlayer {
-    width: 5%;
+   
+    
 }
 
 .Colgoals {
-    width: 5%;
+   
+    
 }  
