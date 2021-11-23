@@ -1,76 +1,48 @@
 .TopScorer{
     background-color: #2B2B3D;
-    width: 30%;
-   
+    width: 385px;
+    height: 590px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-table {
-    width: 100%;
-} 
-.Title span{
+.TopScorer h2{
+    color: #c4c4c4;
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+}
+
+.TopScorer h2 span{
     background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 29px;
-    text-decoration-line: underline;
-    text-decoration-color:#ED6B4E;
-    
-}  
-td {
-    
-} 
+    text-decoration: underline;
+    border-bottom: 2px solid #ED6B4E;
+}
 
-.TopScorer h4 {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
+.Infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color:rgba(196, 196, 196, 0.5);
+    font-size: 20px;
+}
+
+.Players{
+    margin-top: 15px;
+}
+
+.PlayerStats{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #c4c4c4;
     font-size: 24px;
-    line-height: 29px;
-    /* or 122% */
-    color: #C4C4C4;
-} 
-
- 
-  
-.Title h2 {
-    font-family: Source Sans Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 29px;
-/* or 81% */
-
-
-color: #C4C4C4;
-
- 
+    margin-top: 10px;
 }
-
-.TopScorer h3 {
-    font-family: Source Sans Pro;
-font-style: italic;
-font-weight: normal;
-font-size: 20px;
-line-height: 29px;
-/* or 146% */
-
-color: rgba(196, 196, 196, 0.5);
-}   
-.Title{
- 
-   
-}
-
-.ColPlayer {
-   
-    
-}
-
-.Colgoals {
-   
-    
-}  
