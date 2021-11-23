@@ -17,6 +17,7 @@
 .TopScorer h2 span{
     background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: underline;
     border-bottom: 2px solid #ED6B4E;
