@@ -1,0 +1,51 @@
+.RankingsWidget{
+    padding: 50px;
+    margin-top: 50px;
+    background-color: #2B2B3D;
+    color: #c4c4c4;
+    border-radius: 30px;
+    width: 300px;
+    height: fit-content;
+}
+
+.LeagueInfos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+}
+
+.LeagueInfos img{
+    width: 55px;
+    background: #c4c4c4;
+}
+
+.TeamRank{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.TeamInfos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TeamInfos p{
+    margin-right: 5px;
+}
+
+.TeamInfos div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.TeamInfos div img{
+    width: 25px;
+    margin-left: 5px;
+}

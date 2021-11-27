@@ -10,6 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222232;
+}
+
+h2{
+  font-size: 36px;
 }
 
 code {
@@ -27,9 +32,24 @@ code {
 
 .Widgets{
   background-color: #222232;
-  height: 800px;
+  height: 1500px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
 }
 
+.HighlightedWord{
+  background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+}
 
+.Selected{
+  color: #ED6B4E;
+}
 
