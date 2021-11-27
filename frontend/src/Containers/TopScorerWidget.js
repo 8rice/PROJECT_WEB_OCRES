@@ -36,14 +36,14 @@ function TopScorerWidget() {
                 </thead>
 
                 <tbody>
-                    <tr> <td colspan="3"><h4>Lionel Messi</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Robert Lewandowski</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Neymar </h4> </td>  <td colspan="3"><h4>7</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Cristiano Ronaldo</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Kylian Mbappe</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Erling Haaland</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Jorginho</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
-                    <tr> <td colspan="3"><h4>Bruno Fernandes</h4> </td>  <td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Lionel Messi</h4></td><td colspan="3"><h4>12</h4></td></tr>
+                    <tr> <td colspan="3"><h4>Robert Lewandowski</h4></td><td colspan="3"><h4>12</h4></td> </tr>
+                    <tr> <td colspan="3"><h4>Neymar </h4></td><td colspan="3"><h4>7</h4></td></tr>
+                    <tr> <td colspan="3"><h4>Cristiano Ronaldo</h4></td><td colspan="3"><h4>12</h4> </td> </tr>
+                    <tr> <td colspan="3"><h4>Kylian Mbappe</h4></td><td colspan="3"><h4>12</h4></td></tr>
+                    <tr> <td colspan="3"><h4>Erling Haaland</h4></td><td colspan="3"><h4>12</h4></td> </tr>
+                    <tr> <td colspan="3"><h4>Jorginho</h4> </td><td colspan="3"><h4>12</h4></td></tr>
+                    <tr> <td colspan="3"><h4>Bruno Fernandes</h4></td><td colspan="3"><h4>12</h4></td></tr>
                 </tbody>
 
             </table>
