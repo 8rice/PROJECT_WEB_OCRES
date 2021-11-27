@@ -1,16 +1,40 @@
 .SideBar{
-    height: 2000px;
-    border-right: 1px #c4c4c4 solid;
-    background-color: #222232;
-    color: #c4c4c4;
-    width: 66px;
-    text-align: center;
-  }
-  
-.SideBar .selected{
-  background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  height: 1500px;
+  border-right: 1px #c4c4c4 solid;
+  background-color: #222232;
+  color: #c4c4c4;
+  width: 66px;
+  justify-content: center;
+  position: fixed;
+}
+
+.ClosedMenu{
+  left: -80px;
+  transition: .5s ease-out;
+}
+
+.ClosedMenu div{
+  display: none;
+}
+
+.FullMenu{
+  position: fixed;
+  top: 0;
+  left: 65px;
+  width: 150px;
+  height: 1500px;
+  background-color: #222232;
+  border-right: 1px #c4c4c4 solid;
+  transition: .2s ease-out;
+}
+
+.FullMenu div{
+  padding-top: 100px;
+}
+
+.FullMenu div p{
+  font-size: 24px;
+  margin-top: 30px;
 }
 
 .SideBar .fas{

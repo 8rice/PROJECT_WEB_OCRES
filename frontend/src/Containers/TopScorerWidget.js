@@ -5,13 +5,13 @@
 import React, { useState, useEffect } from 'react'
 
 
-function TopScorerWidget() {
+function TopScorerWidget(props) {
     const [data, setData] = useState([]);
 
-    useEffect(() => {
+    /*useEffect(() => {
         let mounted = true;
 
-        fetch("https://v3.football.api-sports.io/players/topscorers?league=61&season=2021", {
+        fetch("https://v3.football.api-sports.io/players/topscorers?league=" + props.league + "&season=2021", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "v3.football.api-sports.io",
@@ -26,18 +26,34 @@ function TopScorerWidget() {
                 }
             })
         return () => mounted = false
-    }, []);
+    }, [props.league]);*/
 
-    return (
+    /*if (data == null) return (
         <div className='TopScorer'>
             <div>
-                <h2><span>Best</span> Scorers</h2>
+                <h2><span className="HighlightedWord">Best</span> Scorers</h2>
                 <div className="Infos">
                     <p>Player</p>
                     <p>Goals</p>
                 </div>
             </div>
             <div className="Players">
+
+                Loading
+            </div>
+        </div>)*/
+
+    return (
+        <div className='TopScorer'>
+            <div>
+                <h2><span className="HighlightedWord">Best</span> Scorers</h2>
+                <div className="Infos">
+                    <p>Player</p>
+                    <p>Goals</p>
+                </div>
+            </div>
+            <div className="Players">
+
                 {data.slice(0, 10).map(
                     player =>
                         <div className="PlayerStats">

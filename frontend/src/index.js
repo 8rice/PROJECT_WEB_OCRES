@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Styles/index.css';
-import './Styles/Nav.css'
+import './Styles/index.css'
 import './Styles/Sidebar.css'
 import './Styles/Topbar.css'
 import './Styles/Homevisual.css'
 import './Styles/TopScorerWidget.css'
+import './Styles/RankingsWidget.css'
+import './Styles/LeagueSelector.css'
 
 
 import App from './App.js';

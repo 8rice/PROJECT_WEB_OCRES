@@ -1,26 +1,18 @@
 .TopScorer{
     background-color: #2B2B3D;
     width: 385px;
-    height: 590px;
-    border-radius: 50px;
+    height: fit-content;
+    border-radius: 30px;
+    margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 15px;
 }
 
 .TopScorer h2{
     color: #c4c4c4;
     text-align: center;
     padding: 30px;
-    font-size: 36px;
-}
-
-.TopScorer h2 span{
-    background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: underline;
-    border-bottom: 2px solid #ED6B4E;
 }
 
 .Infos{
