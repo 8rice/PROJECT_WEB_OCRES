@@ -1,4 +1,4 @@
-"use strict";
+
 const mongoose = require("mongoose");
 
 // Declare schema and assign Schema class

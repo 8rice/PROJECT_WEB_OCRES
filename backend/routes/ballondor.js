@@ -1,25 +1,36 @@
 var express = require('express');
 var router = express.Router();
 const  mongoose = require("mongoose");
-var ballondormodel = require('./models/ballondorSchema');
-//Assign MongoDB connection string to Uri and declare options settings
-var  uri = "mongodb+srv://yaya:yannis@football.tttzp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-// Declare a variable named option and assign optional settings
-const  options = {
-useNewUrlParser:  true,
-useUnifiedTopology:  true
-};
+var query ='mongodb+srv://yaya:yannis'
++'@football.tttzp.mongodb.net/FOOTBALL?'
++'retryWrites=true&w=majority' 
+var ballondormodel = require('../models/ballondor');
 
-// Connect MongoDB Atlas using mongoose connect method
-mongoose.connect(uri, options).then(() => {
-console.log("Database connection established!");
-},
-err  => {
-{
-console.log("Error connecting Database instance due to:", err);
-}
+ 
+const db = (query);
+mongoose.Promise = global.Promise;
+ 
+mongoose.connect(db, { useNewUrlParser : true,
+useUnifiedTopology: true }, function(error) {
+    if (error) {
+        console.log("Error!" + error);
+    }
 });
 /* create a ballon d'or */
+
+router.get('/save', function(req, res) {
+  var newballondor = new ballondormodel({Complete_name:101
+    , Country:"France",Team: "Barcelona", Position: "Midelfer" , Description:'aaaaa',Year:2024});
+
+  newballondor.save(function(err, data) {
+      if(err) {
+          console.log(error);
+      }
+      else {
+          res.send("Data inserted");
+      }
+  });
+});
 router.post('/addone', function(req, res) {
   var newballondor = new ballondormodel();
      newballondor.Complete_name = req.body.Complete_name;
@@ -40,9 +51,9 @@ router.post('/addone', function(req, res) {
      });
   });
 
-/* GET a ballon d'or */
+
   router.get('/findone', function(req, res) {
-    ballondormodel.findOne({Year:{}}, 
+    ballondormodel.findOne({Year:2000}, 
     function(err, data) {
         if(err){
             console.log(err);
@@ -52,6 +63,8 @@ router.post('/addone', function(req, res) {
         }
     });  
 });
+
+/*GET a ballon d'or*/
 
 /* GET all ballon d'or */
 router.get('/findall',function(req, res) {
@@ -67,7 +80,7 @@ router.get('/findall',function(req, res) {
 
 /* Update */
 router.post('/update', function(req, res) {
-  StudentModel.findByIdAndUpdate(req.body.id, 
+  ballondormodel.findByIdAndUpdate(req.body.id, 
   {Name:req.body.Complete_name}, function(err, data) {
       if(err){
           console.log(err);
@@ -105,6 +118,27 @@ router.get('/delete', function(req, res) {
       }
   });  
 });
+/*
+var ballondormodel = require('../models/ballondor.js');
+//Assign MongoDB connection string to Uri and declare options settings
+var  uri = "mongodb+srv://yaya:yannis@football.tttzp.mongodb.net/FOOTBALL?retryWrites=true&w=majority";
+// Declare a variable named option and assign optional settings
+const  options = {
+useNewUrlParser:  true,
+useUnifiedTopology:  true
+};
 
+mongoose.Promise = global.Promise;
+
+// Connect MongoDB Atlas using mongoose connect method
+mongoose.connect(uri, options).then(() => {
+console.log("Database connection established!");
+},
+err  => {
+{
+console.log("Error connecting Database instance due to:", err);
+}
+});
+*/
 
 module.exports = router;
