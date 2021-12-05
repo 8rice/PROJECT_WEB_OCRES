@@ -51,7 +51,7 @@ router.post('/addone', function(req, res) {
      });
   });
 
-
+/*GET a ballon d'or*/
   router.get('/findone', function(req, res) {
     ballondormodel.findOne({Year:2000}, 
     function(err, data) {
@@ -64,7 +64,7 @@ router.post('/addone', function(req, res) {
     });  
 });
 
-/*GET a ballon d'or*/
+
 
 /* GET all ballon d'or */
 router.get('/findall',function(req, res) {
@@ -118,8 +118,8 @@ router.get('/delete', function(req, res) {
       }
   });  
 });
+
 /*
-var ballondormodel = require('../models/ballondor.js');
 //Assign MongoDB connection string to Uri and declare options settings
 var  uri = "mongodb+srv://yaya:yannis@football.tttzp.mongodb.net/FOOTBALL?retryWrites=true&w=majority";
 // Declare a variable named option and assign optional settings

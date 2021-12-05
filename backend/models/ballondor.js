@@ -29,10 +29,15 @@ const ballondorSchema = new Schema({
     Year: {
         type: Number,
         required: true
+    },
+    img: {
+        type: String,
+        required: true
     }
-    
+
+
 });
 
 
 // create and export model
-module.exports = mongoose.model("ballondor", ballondorSchema,"gold-players");
+module.exports = mongoose.model("ballondor", ballondorSchema, "gold-players");
