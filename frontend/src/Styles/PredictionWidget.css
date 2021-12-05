@@ -1,0 +1,117 @@
+.PredictionWidget{
+    width: 100%;
+    background-color: #2B2B3D;
+    border-radius: 20px;
+    padding-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.26) 5px 5px 8px;
+}
+
+.PredictionWidget .GameChoice{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.PredictionWidget .GameChoice .Game{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(196, 196, 196, 0.5);
+    transition: 0.2s ease-in;
+    padding: 5px;
+}
+
+.PredictionWidget .GameChoice .Game:hover{
+    cursor: pointer;
+    color: rgba(196, 196, 196, 1);
+}
+
+.PredictionWidget .GameChoice img{
+    width: 20px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Components{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.Prediction{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 550px;
+    padding: 15px;
+    margin-bottom: 50px;
+    width: 550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Prediction .Percentage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+    color: rgba(196, 196, 196, 0.7);
+}
+
+.Prediction .Percentage p{
+    padding: 15px
+}
+
+.Prediction .Percentage div{
+    padding: 15px;
+}
+
+.Prediction .Radar{
+    width: 400px;
+    height: 400px;
+}
+
+@media (max-width:600px) {
+    .Prediction .Radar{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+.Odds{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 550px;
+    width: 300px;
+    padding:15px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.Odds .AllOdds{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.Odds .AllOdds h3{
+    color: #c4c4c4;
+    font-size: 20px;
+}
+
+.Odds .AllOdds p{
+    color:#c4c4c4;
+    margin: 5px;
+}

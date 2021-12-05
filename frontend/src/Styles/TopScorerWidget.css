@@ -7,6 +7,13 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.26) 5px 5px 8px;
+}
+
+@media (max-width:1000px) {
+    .TopScorer{
+        width: 100%;
+    }
 }
 
 .TopScorer h2{

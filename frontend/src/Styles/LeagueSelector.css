@@ -10,6 +10,12 @@
     flex-direction: column;
 }
 
+@media (max-width:1000px) {
+    .LeagueSelector{
+        width: 100%;
+    }
+}
+
 .LeagueSelector h2{
     text-align: center;
     margin-bottom: 30px;

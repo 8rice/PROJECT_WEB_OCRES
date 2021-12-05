@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 export default function RankingsWidget(props) {
     const [data, setData] = useState([])
-    console.log(props.league)
 
     /*useEffect(() => {
         let mounted = true

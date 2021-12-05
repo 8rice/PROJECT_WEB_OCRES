@@ -9,7 +9,6 @@
     justify-content: center;
 }
 
-
 /* All football you need */
 .HomeVisual h1{
     background: -webkit-linear-gradient(#F4A58A, #ED6B4E);
@@ -19,6 +18,13 @@
     font-size: 68px;
     padding-top: 150px;
 }
+
+@media (max-width:860px) {
+    .HomeVisual h1{
+        font-size: 38px;
+    }
+}
+
 
 .HomeVisual span{
     border-bottom: 7px solid #ED6B4E;
@@ -35,6 +41,6 @@
 
 .Icons i{
     padding: 20px;
-    font-size: 68px;
+    font-size: 44px;
 }
 

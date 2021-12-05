@@ -6,6 +6,13 @@
     border-radius: 30px;
     width: 300px;
     height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.26) 5px 5px 8px;
+}
+
+@media (max-width:1000px) {
+    .RankingsWidget{
+        width: 100%;
+    }
 }
 
 .LeagueInfos{

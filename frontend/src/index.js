@@ -7,6 +7,8 @@ import './Styles/Homevisual.css'
 import './Styles/TopScorerWidget.css'
 import './Styles/RankingsWidget.css'
 import './Styles/LeagueSelector.css'
+import './Styles/PlayersWidget.css'
+import './Styles/PredictionWidget.css'
 
 
 import App from './App.js';

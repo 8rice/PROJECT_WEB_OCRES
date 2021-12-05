@@ -3,30 +3,30 @@ import React, { useState } from 'react';
 export default function Sidebar() {
     const [menuClicked, setMenuClicked] = useState("ClosedMenu")
 
-    function handleClick(e) {
-        if (menuClicked == "ClosedMenu") {
+    function handleClick() {
+        if (menuClicked === "ClosedMenu") {
             setMenuClicked("FullMenu")
         } else {
             setMenuClicked("ClosedMenu")
         }
     }
 
-
     return (
         <div className="SideBar">
             <div className={menuClicked}>
                 <div>
-                    <p>Home</p>
-                    <p>Data</p>
-                    <p>Profile</p>
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#League">Leagues Data</a></p>
+                    <p><a href="#Players">Players</a></p>
+                    <p><a href="#Games">Next Games</a></p>
                 </div>
             </div>
             <div>
                 <i className="fas fa-bars" onClick={handleClick}></i>
-                <i className="fas fa-home Selected"></i>
-                <i className="fas fa-chart-bar"></i>
-                <i className="fas fa-user"></i>
-                <i className="fas fa-cog"></i>
+                <a href="#"><i className="fas fa-home"></i></a>
+                <a href="#League"><i className="fas fa-chart-bar"></i></a>
+                <a href="#Players"><i className="fas fa-tshirt"></i></a>
+                <a href="#Games"><i class="fas fa-futbol"></i></a>
             </div>
         </div>
     )
