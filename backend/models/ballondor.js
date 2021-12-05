@@ -30,8 +30,9 @@ const ballondorSchema = new Schema({
         type: Number,
         required: true
     }
+    
 });
 
 
 // create and export model
-module.exports = mongoose.model("ballondor", ballondorSchema);
+module.exports = mongoose.model("ballondor", ballondorSchema,"gold-players");
