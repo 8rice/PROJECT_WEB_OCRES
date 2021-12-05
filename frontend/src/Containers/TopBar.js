@@ -6,8 +6,8 @@ import userPicture from '../Assets/userpicture.jpeg'
 
 export default function TopBar() {
     const user = {
-        name: "Jacques",
-        surname: "Rossard"
+        name: "Yannis",
+        surname: "Gooré"
     }
     return (
 
