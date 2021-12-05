@@ -4,13 +4,13 @@ import { Radar } from 'react-chartjs-3'
 export default function Prediction(props) {
     const [data, setData] = useState([])
 
-    useEffect(() => {
+    /*useEffect(() => {
         let mounted = true
         fetch("https://v3.football.api-sports.io/predictions?fixture=" + props.game, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "v3.football.api-sports.io",
-                "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2"
+                "x-rapidapi-key": "021e9e258ba4d2039c51343eaeb44485"
             }
         })
             .then(response => response.json())
@@ -24,7 +24,7 @@ export default function Prediction(props) {
         }
 
 
-    }, [props.game]);
+    }, [props.game]);*/
 
     /*if (props.game == 0) return (
         <div className="Prediction">

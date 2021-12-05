@@ -9,7 +9,7 @@ export default function RankingsWidget(props) {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "v3.football.api-sports.io",
-                "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2"
+                "x-rapidapi-key": "021e9e258ba4d2039c51343eaeb44485"
             }
         })
             .then(response => response.json())
@@ -23,6 +23,7 @@ export default function RankingsWidget(props) {
             mounted = false
         }
     }, [props.league]);*/
+
     return (
         <div className="RankingsWidget">
             {data.map(league =>

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
-//Autre API Key 021e9e258ba4d2039c51343eaeb44485
-//f362f7602bfd94a69f2ccee18732fbd2
+//Autre API Key 
+//021e9e258ba4d2039c51343eaeb44485
+//f362f7602bfd94a69f2ccee18732fbd2 SUSPENDU
 
 import StatsPlayersWidget from '../Components/StatsPlayersWidget';
 
 export default function PlayersWidget() {
-    const [userQuery, setUserQuery] = useState("");//"messi" //154
+    const [userQuery, setUserQuery] = useState("messi");//"messi" //154
     const [data, setData] = useState([])
     const [change, setChange] = useState(0)
 
@@ -16,7 +17,7 @@ export default function PlayersWidget() {
             fetch(" https://v2.api-football.com/players/search/" + userQuery, {
                 "method": "GET",
                 "headers": {
-                    "x-rapidapi-key": "f362f7602bfd94a69f2ccee18732fbd2"
+                    "x-rapidapi-key": "021e9e258ba4d2039c51343eaeb44485"
                 }
             })
                 .then(response => response.json())
@@ -35,7 +36,6 @@ export default function PlayersWidget() {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        alert(`Submitting Name ${userQuery}`)
         setChange(change + 1)
         console.log(userQuery)
     }

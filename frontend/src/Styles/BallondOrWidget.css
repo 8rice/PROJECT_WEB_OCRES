@@ -1,0 +1,146 @@
+.BallondOr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.26) 5px 5px 8px;
+    background-color: #2B2B3D;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.BallondOr .BallondOrTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.BallondOr .BallondOrTop h2{
+    padding-bottom: 50px;
+}
+
+.BallondOr .BallondOrTop .SearchBar{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181829;
+    border-radius: 25px;
+}
+
+.BallondOr .BallondOrTop .SearchBar i{
+    font-size: 25px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgba(196, 196, 196, 0.25);
+}
+
+.BallondOr .BallondOrTop input{
+    border: none;
+    color: rgba(196, 196, 196, 0.5);
+    background-color: #181829;
+    border-radius: 25px;
+    width: 150px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.BallondOr .BallondOrTop input:focus{
+    outline: none;
+}
+
+.BallondOr .BallondOrTop .Submit{
+    background: rgba(196, 196, 196, 0.75);
+    color: #181829;
+    border-radius: 0px;
+    width: 75px;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.BallondOr .BallondOrTop .Submit:hover{
+    cursor: pointer;
+    background: rgba(196, 196, 196, 1);
+}
+
+.BallondOr .BallondOrBottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+}
+.BallondOr .BallondOrBottom .LeftContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 400px;
+}
+
+.BallondOr .BallondOrBottom .LeftContent .Infos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.BallondOr .BallondOrBottom .LeftContent .Infos img{
+    height: 250px;
+}
+
+.BallondOr .BallondOrBottom .LeftContent .Infos div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    color: rgba(196, 196, 196, 0.75);
+}
+
+.BallondOr .BallondOrBottom .LeftContent .Description{
+    width: 500px;
+    color: #c4c4c4;
+}
+
+@media (max-width:650px) {
+    .BallondOr .BallondOrBottom .LeftContent .Description{
+        width: 300px;
+    }
+
+    .BallondOr .BallondOrBottom .LeftContent{
+        padding-top: 25px;
+    }
+
+    .BallondOr .BallondOrBottom .LeftContent .Infos div{
+        padding:25px 0px;
+    }
+
+    .BallondOr .BallondOrBottom .LeftContent .Infos img{
+        height: 150px;
+    }
+
+    .BallondOr .BallondOrBottom .RightContent{
+        padding-top: 65px;
+    }
+}
+
+.BallondOr .BallondOrBottom .RightContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.BallondOr .BallondOrBottom .RightContent h2{
+    font-size: 64px;
+}
+
+.BallondOr .BallondOrBottom .RightContent img{
+    width: 288px;
+}

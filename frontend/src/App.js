@@ -6,6 +6,7 @@ import TopScorerWidget from './Containers/TopScorerWidget';
 import RankingsWidget from './Containers/RankingsWidget';
 import PlayersWidget from './Containers/PlayersWidget';
 import PredictionWidget from './Containers/PredictionWidget';
+import BallondOr from './Containers/BallondOrWidget';
 
 
 
@@ -43,7 +44,7 @@ function App() {
             <PredictionWidget></PredictionWidget>
           </div>
           <div className="WidgetsRow">
-            <h2>Ballon d'or</h2>
+            <BallondOr></BallondOr>
           </div>
           <div className="Footer">
             <div className="FollowUs">
